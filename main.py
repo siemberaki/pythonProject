@@ -1,13 +1,14 @@
-class player:
+class item:
+    def calculate_total_price(self, unit, price):
+        return unit * price
+
+
+item1 = item()
+item1.unit = 2
+item1.price = 3
+print(item1.calculate_total_price(item1.unit, item1.price))
 
 
 
-    def  __init__(self,name,age):  #    (self,name,age):
-
-        self.name=name
-        self.age=age
-
-players=[player("siem ",12),player("sham",25)]
 
 
-print(players[0].age)
